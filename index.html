@@ -7,13 +7,33 @@
 </head>
 <body>
     <h1>Uses of array and object in js with for in loop</h1>
-    <p>let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"]</p><br>
+    <p>let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"]</p><br><br>
     <p>let persons = {
         name : "Rezaul",
         age : 54,
         Resident : "Badda",
         City : "Dhaka"
-    }</p>
+    }</p><br><br>
+    <p>let arr_and_obj = [
+        {
+            name : "Rezaul",
+            age : 54,
+            Resident : "Badda",
+            City : "Dhaka"
+        },
+        {
+            name : "Sadia",
+            age : 52,
+            Resident : "Badda",
+            City : "Dhaka"
+        },
+        {
+            name : "Ishmum",
+            age : 23,
+            Resident : "Palashi",
+            City : "Dhaka"
+        }
+        ]</p>
     <script>
         let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"];
         let persons = {
@@ -22,14 +42,42 @@
             Resident : "Badda",
             City : "Dhaka"
         };
+        let arr_and_obj = [
+        {
+            name : "Rezaul",
+            age : 54,
+            Resident : "Badda",
+            City : "Dhaka"
+        },
+        {
+            name : "Sadia",
+            age : 52,
+            Resident : "Badda",
+            City : "Dhaka"
+        },
+        {
+            name : "Ishmum",
+            age : 23,
+            Resident : "Palashi",
+            City : "Dhaka"
+        }
+        ]
         document.write ("Array List all at a time <br>"+arr_country+"<br>");
         document.writeln("Array list print vertically <br>");
         for (let item in arr_country){
             document.write(arr_country[item]+"<br>");
         } 
-        document.writeln("Object list with value and property seperated by colon"+"<br>");
+        document.writeln("Object list with value and property seperated by colon"+"<br><br>");
         for(let items in persons){
             document.write(items+" :"+persons[items]+"<br>");
+        }
+        document.write("<br>");
+        
+        document.writeln("Array of Object list <br>"+"<br>");
+        for(let i in arr_and_obj){
+            for (items in arr_and_obj[i]){
+            document.write(items+" :"+arr_and_obj[i][items]+"<br><br>");
+            }
         }
         
     </script>
