@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop with array and object</title>
+</head>
+<body>
+    <h1>Uses of array and object in js with for in loop</h1>
+
+    <script>
+        let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"];
+        let persons = {
+            name : "Rezaul",
+            age : 54,
+            Resident : "Badda",
+            City : "Dhaka"
+        };
+        document.write (arr_country+"<br>");
+        for (let item in arr_country){
+            document.write(arr_country[item]+"<br>");
+        }
+        for(let items in persons){
+            document.write(items+" :"+persons[items]+"<br>");
+        }
+        
+    </script>
+</body>
+</html>
