@@ -7,7 +7,13 @@
 </head>
 <body>
     <h1>Uses of array and object in js with for in loop</h1>
-
+    <p>let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"]</p><br>
+    <p>let persons = {
+        name : "Rezaul",
+        age : 54,
+        Resident : "Badda",
+        City : "Dhaka"
+    }</p>
     <script>
         let arr_country = ["Dhaka","Khulna","Bogra","Chittagong","Vola","Voirab"];
         let persons = {
@@ -16,10 +22,12 @@
             Resident : "Badda",
             City : "Dhaka"
         };
-        document.write (arr_country+"<br>");
+        document.write ("Array List all at a time <br>"+arr_country+"<br>");
+        document.writeln("Array list print vertically <br>");
         for (let item in arr_country){
             document.write(arr_country[item]+"<br>");
-        }
+        } 
+        document.writeln("Object list with value and property seperated by colon"+"<br>");
         for(let items in persons){
             document.write(items+" :"+persons[items]+"<br>");
         }
